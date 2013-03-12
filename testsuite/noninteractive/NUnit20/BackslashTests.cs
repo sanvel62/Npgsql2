@@ -59,6 +59,7 @@ namespace NpgsqlTests
                 Assert.Fail();
             }
         }
+
         [Test]
         public void TestWithEntityFrameWork()
         {
@@ -84,15 +85,6 @@ namespace NpgsqlTests
                 Assert.Fail();
             }
 
-        }
-
-        [Test]
-        public void SimpleTest()
-        {
-            string testString = "av\\fs\\dgdg\t\n\b\f\n\t";
-            string testString2 = @"av\fs\dgdg\t\n\b\f\n\t";
-
-            //Assert.AreEqual(testString, testString2);
         }
 
     }

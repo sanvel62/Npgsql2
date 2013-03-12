@@ -58,8 +58,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\IdeaCMS\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -85,7 +86,7 @@
     <Compile Include="BaseClassTests.cs" />
     <Compile Include="CommandTests.cs" />
     <Compile Include="ConnectionTests.cs" />
-    <Compile Include="Tablea\Context.cs" />
+    <Compile Include="POCO\Context.cs" />
     <Compile Include="DataAdapterTests.cs" />
     <Compile Include="DataReaderTests.cs" />
     <Compile Include="NpgsqlParameterTests.cs">
@@ -93,7 +94,7 @@
     </Compile>
     <Compile Include="PrepareTests.cs" />
     <Compile Include="SystemTransactionsTest.cs" />
-    <Compile Include="Tablea\Tablea.cs" />
+    <Compile Include="POCO\Tablea.cs" />
     <Compile Include="TypesTests.cs" />
   </ItemGroup>
   <ItemGroup>
